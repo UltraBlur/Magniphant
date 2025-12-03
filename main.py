@@ -6,6 +6,7 @@ Eulerian Video Magnification - Main Entry Point
 
 import sys
 import argparse
+import numpy as np
 
 
 def run_gui():
