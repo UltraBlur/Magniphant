@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run python test_ui.py)",
+      "Bash(uv run python -c \"from core import EulerianVideoMagnification; print(''✅ 语法修复成功，模块导入正常'')\")",
+      "Bash(uv run python -c \"from core import EulerianVideoMagnification; print(''Syntax fixed, module import successful'')\")",
+      "Bash(uv run python -c \"from core import EulerianVideoMagnification; print(''Optimized implementation ready'')\")",
+      "Bash(uv run python -c \"from core import EulerianVideoMagnification; print(''Memory-safe implementation ready'')\")",
+      "Bash(uv run python -c \"from core import EulerianVideoMagnification; print(''✅ 清理完成，代码运行正常'')\")",
+      "Bash(uv run python -c \"from core import EulerianVideoMagnification; print(''Cleaned up implementation ready'')\")",
+      "Bash(uv run python -c \"from core import EulerianVideoMagnification; from ui import EVMMainWindow; print(''Complete implementation with ProRes support ready'')\")",
+      "Bash(uv run python -c \"from core import EulerianVideoMagnification; print(''12K high resolution processing ready'')\")",
+      "Bash(uv run python -c \"from core import EulerianVideoMagnification; from ui import EVMMainWindow; print(''Complete implementation with frequency detection ready'')\")",
+      "Bash(uv run python -c \"import eulerian_magnification as em; print(dir(em))\")",
+      "Bash(uv run python -c \"import eulerian_magnification as em; print(dir(em.eulerian_magnification))\")",
+      "Bash(uv run python -c \"import eulerian_magnification as em; print(''Available modules:''); print([x for x in dir(em) if not x.startswith(''_'')]); print(''\\nChecking base module:''); print(dir(em.base))\")",
+      "Bash(uv run python -c \"from core import EulerianVideoMagnification; print(''Frequency detection system ready'')\")",
+      "Bash(uv run python -c \"from core import EulerianVideoMagnification; from ui import EVMMainWindow; print(''Decimal frequency input system ready'')\")",
+      "Bash(uv run python:*)",
+      "Bash(dir:*)",
+      "Bash(del \"core\\utils.py\")",
+      "Bash(del \"eulerian_video_magnification.py\")",
+      "Bash(del \"dark_ui_template.py\")",
+      "Bash(rm:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

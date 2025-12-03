@@ -1,0 +1,29 @@
+[project]
+name = "evm"
+version = "0.1.0"
+description = "Eulerian Video Magnification Tool"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyqt5>=5.15.11",
+    "scipy>=1.15.3",
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0",
+    "psutil>=5.9.0",
+    "eulerian-magnification>=0.22",
+]
+
+[project.scripts]
+evm = "main:main"
+
+[tool.setuptools.packages.find]
+include = ["core*", "ui*"]
+exclude = ["data*", "doc*"]
+
+[tool.uv]
+package = true
+constraint-dependencies = ["pyqt5-qt5 <=5.15.2"]
+
+[[tool.uv.index]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
